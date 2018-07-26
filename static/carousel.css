@@ -1,0 +1,92 @@
+.vue-carousel .slides-viewport {
+    overflow: hidden;
+    width: 100%;
+    display: inline-flex;
+}
+.vue-carousel .slides-viewport,
+.vue-carousel .slides-wrapper,
+.vue-carousel .slides-wrapper img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.vue-carousel .slides-wrapper {
+    display: inline-flex;
+    transition: transform 0.5s ease;
+}
+.vue-carousel .carousel-dot {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 1px solid #afafaf;
+    border-radius: 50%;
+}
+.vue-carousel .carousel-dot:hover {
+    background-color: #e5e5e5;
+}
+.vue-carousel .carousel-dot.active {
+    background-color: #585858;
+}
+.vue-carousel .dots-control{
+    width: 100%;
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+    display: flex;
+}
+.vue-carousel .slide > .slide-container > img {
+    display: block;
+    position: absolute;
+    /* max-width: 100%; */
+    width: auto;
+    height: 100%;
+}
+.vue-carousel .slide {
+    position: relative;
+    height: 100%;
+    display: inline-flex;
+    overflow: hidden;
+}
+.vue-carousel .carousel-wrapper {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.vue-carousel .carousel-wrapper > *{
+    display: inline-flex;
+}
+.vue-carousel .carousel-conrtol {
+    display: inline-flex;
+    /* height: 100%; */
+    align-self: center!important;
+}
+.vue-carousel .btn-left,
+.vue-carousel .btn-right {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #a5a5a5;
+    border: solid 1px #a5a5a5;
+}
+.vue-carousel .btn-left:hover,
+.vue-carousel .btn-right:hover {
+    background-color: #e5e5e5;
+    color: white;
+}
